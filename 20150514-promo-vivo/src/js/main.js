@@ -100,22 +100,7 @@ new WxMoment.PageSlider({
 });
 
 //分享
-new WxMoment.Share({
-    //分享到朋友圈
-    'moment': {
-        'title': '回归，是创造手品之美的起点',
-        'desc': "回归美的原点，vivo创造手品之美，X5Pro心动上市"
-    },
-    //分享给好友
-    'friend': {
-        'title': "回归，是创造手品之美的起点",
-        'desc': "回归美的原点，vivo创造手品之美，X5Pro心动上市"
-    },
-    'global': {
-        'img_url': basePath + "img/thumb.jpg",
-        'link': window.location.href.split("?")[0].replace(/([&|\?]{1})ticket=[\w\-]+(&?)/, '$1').replace(/\?$/, '')
-    }
-});
+var share = new WxMoment.Share();
 
 var wa = new WxMoment.Analytics({
     //projectName 请与微信商务团队确认
