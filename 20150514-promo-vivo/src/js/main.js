@@ -96,7 +96,7 @@ new WxMoment.OrientationTip();
 
 //切换
 new WxMoment.PageSlider({
-    pages: document.querySelectorAll('.screen')
+    pages: $('.screen')
 });
 
 //分享
