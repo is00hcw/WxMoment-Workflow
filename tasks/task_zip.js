@@ -4,7 +4,7 @@ var util = require('./lib/util');
 module.exports = function (gulp, config) {
 
     gulp.task('zip', ['build_dist'], function (cb) {
-        gulp.src('./src/**/*')
+        gulp.src('./dist/**/*')
             .pipe(zip(config.projectName + '.zip'))
             .pipe(gulp.dest('./'))
             .on('end', function () {
